@@ -20,12 +20,7 @@
                   <router-link 
                     :to="{name: 'user-edit', params: {id: user.profile.id}}" 
                   >
-                    <button 
-                      type="submit" 
-                      class="btn btn-primary" 
-                      @click.stop.prevent="">
-                        edit
-                    </button>
+                    <button type="submit" class="btn btn-primary" >edit</button>
                   </router-link>
               </p>
             </div>
