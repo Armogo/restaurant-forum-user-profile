@@ -26,7 +26,7 @@
       <div class="ml-auto d-flex align-items-center">
         <!-- is user is admin -->
         <router-link v-if="currentUser.isAdmin"
-             to="#" 
+             :to="{name: 'admin-restaurants'}" 
              class="text-white mr-3"
         >
          管理員後台
@@ -35,7 +35,7 @@
         <template v-if="isAuthenticated">
           <!-- is user is login -->
           <router-link
-             to="#" 
+             :to="{name: 'user' , params: {id: currentUser.id}}" 
              class="text-white mr-3"
           > 
            {{currentUser.name || 使用者}} 您好
