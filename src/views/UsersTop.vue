@@ -8,7 +8,7 @@
     <hr>
 
     <div class="row text-center">
-      <UsersTop
+      <TopUsersProfile
         v-for="user in users"
         :key="user.id"
         :initial-user="user"
@@ -19,7 +19,7 @@
 
 <script>
 import NavTabs from './../components/NavTabs.vue'
-import UsersTop from './../components/UsersTop.vue'
+import TopUsersProfile from '../components/TopUsersProfile.vue'
 
 const dummyData = {
     "users": [
@@ -420,7 +420,7 @@ const dummyData = {
 export default {
   components: {
     NavTabs,
-    UsersTop
+    TopUsersProfile
   },
   data() {
     return {
